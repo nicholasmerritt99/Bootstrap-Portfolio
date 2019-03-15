@@ -40,6 +40,17 @@
     margin: auto;
   }
 
+  #atitle1{
+    color: #4aaaa5;
+    height: 43px;
+    width: 100%;
+    background-color: white;
+    border-bottom: 2px solid grey;
+    display: inline-block;
+    line-height: 0.85;
+    margin-bottom: 10px;
+  }
+
   #Profilepic {
     height: 100px;
     width: 150px;
@@ -150,9 +161,9 @@
   #form {
     border-radius: 5px;
     background-color: white;
-    padding: 20px;
+    padding: 60px;
     height: 100%;
-    margin-left: 15%;
+    margin-left: 2%;
   }
 
   .container {
