@@ -3,49 +3,59 @@
 
 <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>My Portfolio</title>
 </head>
 
-<body>
+<body id="wrapper">
 
-        <div class="container row">
+        <div class="container">
                 <span inline>
-                        <h1 inline class="myname2">Nicholas Merritt</h1>
-                        <a class="tablinks1" href="index.html">About</a>
-                        <a class="tablinks2" href="contact.html">Contact</a>
-                        <a class="tablinks3" href="portfolio.html">Portfolio</a>
+                        <h4 inline style="max-width:25%" id="mynameh1">Nicholas Merritt</h4>
+
+
+                        <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Dropdown
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                                  <a class="btn btn-primary" href="index.html" role="button">About</a>
+                                  <a class="btn btn-primary" href="contact.html" role="button">Contact</a>
+                                  <a class="btn btn-primary" href="portfolio.html" role="button">Portfolio</a>
+                                </div>
+                              </div>
                 </span>
+</div>
+        
+        <div id="formdiv" class="row">
+                <form id="form" class="col-8" style="max-width:100%;">
+                        <div class="form-group">
+                          <label for="exampleFormControlInput1">First Name</label>
+                          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="firstname">
+                        </div>
+                        <div class="form-group">
+                                <label for="exampleFormControlInput1">Last name</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="lastname">
+                        </div>
+                        <div class="form-group">
+                                    <label for="exampleFormControlInput1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Message</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </form>
         </div>
-        <div class="form">
-                <form action="action_page.php">
-
-                        <label for="firstname">First Name</label>
-                        <input type="text" id="fname" name="firstname" placeholder="Your First Name">
-
-                        <label for="lastname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your Last Name">
-
-                        <label for="email">Email</label>
-                        <input type="text" id="email" name="email" placeholder="Your Email">
-
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" placeholder="Write your message"
-                                style="height:200px"></textarea>
-
-                        <input type="submit" value="Submit">
-
-                </form>
-        </div>
-
-        <footer>
-
-                <p>Copyright ©</p>
-        </footer>
-
+        
+            <footer class="blockquote-footer " style="max-width:100%; height: 50px;">Copyright ©<cite title="Source Title">Source Title</cite></footer>
+ 
 </body>
 
 </html>
